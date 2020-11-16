@@ -73,7 +73,7 @@ def write_csv(header, data, filename='election_results.csv'):
     except PermissionError:
         print('File is opened by another program.')
     else:
-        print('Report created.')
+        print(f'Report created: {filename}')
 
 
 def main():
