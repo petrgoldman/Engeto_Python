@@ -62,8 +62,9 @@ class TicTacToeGame:
                     self.draw_o(row, col)
 
         # Draw status
+        
         status_text = f"Player {self.turn}'s turn"
-        if se>lf.ai_thinking:
+        if self.ai_thinking:
             status_text = "AI is thinking..."
         if self.game_over:
             if self.winner:
